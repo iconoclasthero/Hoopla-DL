@@ -78,7 +78,7 @@ All Currently Borrowed titles:
     Downloads Hoopla content with title id 123456
 
 .NOTES
-    Author: kabutops728 - My Anonamouse
+    Author: redacted
     Version: 2.9
     ffmpeg is required to decrypt audiobooks
     epubzip is required to decrypt ebooks/comic books
