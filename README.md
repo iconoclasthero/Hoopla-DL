@@ -1,3 +1,20 @@
+A PowerShell script that can download and decrypt ebooks, comics, and audiobooks from Hoopla. (Requires a Hoopla account, free with card from many public libraries).
+
+It can download one or more "title" ids, automatically borrowing them if you don't already have them borrowed, or download all that you currently have borrowed. Epubzip and FFmpeg are required for ebooks and audiobooks respectively.
+
+Save with .ps1 extension, and place the epubzip ( https://github.com/dino-/epub-tools/releases ) and FFmpeg ( https://ffmpeg.org/download.html ) binaries next to the script. Usage examples below. You can find the title IDs from the URLs on the site (/title/XXXXXX). It will prompt for your Hoopla credentials upon running. By default, it will output the epub/cbz/m4a files in the same folder you run the script from.
+
+From a powershell/pwsh prompt:
+
+Single Title With Output Folder specified
+./HooplaDownloader.ps1 -TitleId 1234 -OutputFolder c:\users\me\documents
+
+Multiple TItles
+./HooplaDownloader.ps1 -TitleId 1234, 4321
+
+All Currently Borrowed titles
+./HooplaDownloader.ps1 -AllBorrowed
+
 .SYNOPSIS
     Downloads, decrypts and repackages content from Hoopla
 
@@ -63,3 +80,6 @@
 .NOTES
     Author: kabutops728 - My Anonamouse
     Version: 2.9
+    ffmpeg is required to decrypt audiobooks
+    epubzip is required to decrypt ebooks/comic books
+    
