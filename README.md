@@ -57,7 +57,7 @@
     If set, leave audiobook as single file, as if chapter data is not present.
 
 .EXAMPLE
-    .\Invoke-HooplaDownload.ps1 123456
+    .\hoopla-dl.ps1 123456
     Downloads Hoopla content with title id 123456
 
 .NOTES
