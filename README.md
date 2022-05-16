@@ -7,13 +7,13 @@ Save with .ps1 extension, and place the epubzip ( https://github.com/dino-/epub-
 From a powershell/pwsh prompt:
 
 Single Title With Output Folder specified:  
-```./HooplaDownloader.ps1 -TitleId 1234 -OutputFolder c:\users\me\documents```
+```./hoopla-dl.ps1 -TitleId 1234 -OutputFolder c:\users\me\documents```
 
 Multiple Titles:  
-```./HooplaDownloader.ps1 -TitleId 1234, 4321```
+```./hoopla-dl.ps1 -TitleId 1234, 4321```
 
 All Currently Borrowed titles:  
-```./HooplaDownloader.ps1 -AllBorrowed```
+```./hoopla-dl.ps1 -AllBorrowed```
 
 .SYNOPSIS
     Downloads, decrypts and repackages content from Hoopla
